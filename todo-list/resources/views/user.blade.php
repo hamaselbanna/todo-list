@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user page</title>
+</head>
+<body>
+
+    <h1>{{ $page_user }}</h1>
+
+    <!-- button for home page -->
+    <a href="http://localhost/todo-list/public/home"><button>Home</button></a>
+</body>
+</html>
