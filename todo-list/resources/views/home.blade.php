@@ -27,13 +27,7 @@
             text-align: center;
         }
 
-        form {
-            /*ده حاويه كبيره عطيناها مكان عشان كل الي فيها يكونو في نفس  السطر */
-            float: left;
-            padding: 70px;
-            color: brown;
-            font-size: 20px;
-        }
+            
 
         .port {
             font-size: 20px;
@@ -65,15 +59,60 @@
 
 
     <!-- login for user -->
-    <form class="user" action="user.blade.php" method="post">
+    <form class="user" action="user.blade.php" method="post"><!--طريقه الارسال -->
         <h2 style="text-align:center; font-size:50px;">User</h2>
         <p class="port">
             <label>Name:</label><!--input descriptions-->
-            <input type="text" placeholder="Name"><br><br>
+            <input 
+                type="text" 
+                placeholder="Name" 
+                name="name" 
+                autofocus><br><br>
+
             <label>Email:</label>
-            <input type="email" placeholder="email"><br><br>
+            <input 
+                type="email" 
+                placeholder="email" 
+                name="mail"><br><br>
+
             <label>Password:</label>
-            <input type="password" required placeholder="Password"><br><br>
+            <input 
+                type="password" 
+                required 
+                placeholder="Password" 
+                name="pass" minlength="6" 
+                maxlength="15"><br><br>
+
+            <label>Number:</label>
+            <input 
+                type="number" 
+                min="10" 
+                max="100" 
+                step="5"><br><br>
+
+            <label>range:</label>
+            <input 
+                type="range" 
+                min="10" 
+                max="100" 
+                step="5" 
+                value="20"><br><br>
+                <div>
+                <input id="win" type="checkbox" name="windows">
+                <label for="win">windows:</label>
+            </div>
+            <div>
+                <input id="mac" type="checkbox" name="mac">
+                <label for="mac">mac:</label>
+            </div>
+            <div>
+                <input id="lin" type="checkbox" name="linux">
+                <label for="lin">linux:</label>
+            </div><br>
+                
+            <label>color:</label>
+            <input type="color"><br><br>          
+
             <input type="submit" style="font-size:30px; color: brown;">
         </p>
         <!-- المفروض السطر ده هيكون في الكنترولر-->
