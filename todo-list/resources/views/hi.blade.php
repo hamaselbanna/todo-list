@@ -27,15 +27,18 @@
             text-align: center;
             padding: 50px;
         }
-
+     
         .parent {            
-            display:grid;
+            /*display:grid;
             text-align: center;
             grid-template-columns: auto auto;
-            grid-template-rows: auto auto;
-            padding:10px;
-            row-gap: 20px  ;
-            column-gap: 20px;
+            grid-template-rows: auto auto;*/
+            padding:50px;
+            row-gap: 50px;
+            column-gap: 200px;/*المسافه بين الاعمده*/
+            width: 100%;
+            display: flex;
+            justify-content: center;
         }
 
         .rad {
@@ -43,8 +46,9 @@
             width:450px;
             color: black;
             font-size: 70px;
-            float: left;
+            /*float: left;*/
             background-color: brown;
+            justify-content: center;
         }
     </style>
 </head>
